@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Nicolas Varga</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="resume.html" class="active">Resume</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <button id="theme-toggle-mobile" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="resume-page">
+      <div class="container">
+        <div class="resume-header">
+          <h1>Resume</h1>
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+
+        <div class="resume-content">
+          <!-- Header -->
+          <div class="resume-section resume-title-section">
+            <h2>Nicolas Varga</h2>
+            <p class="resume-subtitle">System & Network Engineer</p>
+            <div class="resume-contact-info">
+              <span><strong>Email:</strong> <a href="mailto:nicolas.varga@example.com">nicolas.varga@example.com</a></span>
+              <span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nicolasvarga">linkedin.com/in/nicolasvarga</a></span>
+              <span><strong>GitHub:</strong> <a href="https://github.com/nicolasvarga">github.com/nicolasvarga</a></span>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="resume-section fade-in">
+            <h3>Professional Summary</h3>
+            <p>Dedicated System and Network Engineering student with hands-on experience in Linux administration, network security, and infrastructure design. Passionate about building robust, secure, and scalable systems. Strong problem-solving abilities and excellent communication skills.</p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section fade-in">
+            <h3>Education</h3>
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Bachelor of Science in System and Network Engineering</h4>
+                  <span>2021 - Present</span>
+                </div>
+                <p>Howest, Belgium</p>
+                <p class="resume-item-description">Relevant coursework: Network Infrastructure, System Administration, Cybersecurity, Cloud Computing, IT Project Management</p>
+              </div>
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Associate Degree in Computer Science</h4>
+                  <span>2019 - 2021</span>
+                </div>
+                <p>College Name, Belgium</p>
+                <p class="resume-item-description">Foundational studies in programming, computer architecture, and information systems</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section fade-in">
+            <h3>Technical Skills</h3>
+            <div class="resume-skills-grid">
+              <div class="resume-skill-category">
+                <h4>Operating Systems</h4>
+                <p>Linux (Fedora, CentOS, Ubuntu), Windows Server, macOS</p>
+              </div>
+              <div class="resume-skill-category">
+                <h4>Networking</h4>
+                <p>TCP/IP, DNS, DHCP, VLANs, Firewalls, VPN, Routing</p>
+              </div>
+              <div class="resume-skill-category">
+                <h4>Security</h4>
+                <p>pfSense, iptables, Suricata IDS, Network Segmentation</p>
+              </div>
+              <div class="resume-skill-category">
+                <h4>Virtualization</h4>
+                <p>Proxmox VE, VMware ESXi, KVM, LXC Containers</p>
+              </div>
+              <div class="resume-skill-category">
+                <h4>Scripting & Automation</h4>
+                <p>Bash, PowerShell, Python, Git</p>
+              </div>
+              <div class="resume-skill-category">
+                <h4>Cloud Technologies</h4>
+                <p>AWS, Azure (Fundamentals)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section fade-in">
+            <h3>Projects</h3>
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Network Security Lab</h4>
+                  <span>2023</span>
+                </div>
+                <ul class="resume-item-list">
+                  <li>Designed and implemented a secure network with VLANs and proper segmentation</li>
+                  <li>Configured pfSense firewall with rule sets based on least privilege principle</li>
+                  <li>Implemented and tuned Suricata IDS for network monitoring</li>
+                  <li>Created detailed documentation of the security architecture</li>
+                </ul>
+                <p><strong>Technologies:</strong> pfSense, Wireshark, Suricata, VLANs</p>
+              </div>
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Linux Server Automation</h4>
+                  <span>2022</span>
+                </div>
+                <ul class="resume-item-list">
+                  <li>Developed Bash scripts for automating routine server administration tasks</li>
+                  <li>Created system monitoring and alerting solutions</li>
+                  <li>Implemented log rotation and analysis scripts</li>
+                  <li>Designed backup and recovery procedures</li>
+                </ul>
+                <p><strong>Technologies:</strong> Bash, CentOS, Cron, Shell Scripting</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="resume-section fade-in">
+            <h3>Certifications</h3>
+            <div class="resume-items">
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>CompTIA Network+</h4>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="resume-item">
+                <div class="resume-item-header">
+                  <h4>Linux Professional Institute LPIC-1</h4>
+                  <span>2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="resume-section fade-in">
+            <h3>Languages</h3>
+            <div class="languages-grid">
+              <div class="language-card">
+                <h4>English</h4>
+                <p>Fluent</p>
+              </div>
+              <div class="language-card">
+                <h4>Dutch</h4>
+                <p>Native</p>
+              </div>
+              <div class="language-card">
+                <h4>French</h4>
+                <p>Intermediate</p>
+              </div>
+              <div class="language-card">
+                <h4>Romanian</h4>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> Nicolas Varga. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="mailto:nicolas.varga@example.com">
+            <i class="fas fa-envelope"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

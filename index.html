@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Varga - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+        <div class="mobile-nav-toggle">
+          <button id="theme-toggle-mobile" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-photo">
+            <img src="assets/profile-placeholder.jpg" alt="Nicolas Varga">
+          </div>
+          <div class="hero-text">
+            <h1 class="fade-in">Hello, I'm</h1>
+            <h1 class="name fade-in">Nicolas Varga</h1>
+            <p class="fade-in">I'm a system and network engineering student at Howest, passionate about building robust infrastructure and solving complex networking challenges.</p>
+            <div class="hero-buttons fade-in">
+              <a href="projects.html" class="btn btn-primary">
+                View My Projects <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="resume.html" class="btn btn-outline">
+                Download Resume <i class="fas fa-download"></i>
+              </a>
+            </div>
+            <div class="social-links fade-in">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>Hello! I'm Nicolas Varga, a passionate system and network engineering student based in Belgium. I'm dedicated to building secure, efficient, and scalable infrastructure solutions.</p>
+          <p>When I'm not configuring networks or managing servers, you can find me hiking in nature, experimenting with home lab setups, or contributing to open-source projects.</p>
+          <a href="about.html" class="link-arrow">
+            Learn more about me <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-overview">
+      <div class="container">
+        <div class="section-header">
+          <h2>Core Skills</h2>
+          <p>Specialized in system administration and network infrastructure</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Operating Systems</h3>
+            <p>Linux (Fedora, CentOS), Windows Server, macOS</p>
+            <a href="skills.html" class="link-arrow">
+              Learn more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="skill-card">
+            <h3>Networking</h3>
+            <p>DNS, Firewalls, SSH, VLANs, pfSense, Routing</p>
+            <a href="skills.html" class="link-arrow">
+              Learn more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Automation</h3>
+            <p>Git, Bash, Wireshark, firewalld, systemd</p>
+            <a href="skills.html" class="link-arrow">
+              Learn more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>A selection of my recent work and academic projects</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <span>Project Screenshot</span>
+            </div>
+            <div class="project-content">
+              <h3>Network Security Lab</h3>
+              <p>Implemented a secure network with VLANs, firewall rules, and intrusion detection systems.</p>
+              <div class="project-tags">
+                <span>pfSense</span>
+                <span>Wireshark</span>
+                <span>Suricata</span>
+              </div>
+              <a href="projects.html" class="link-arrow">
+                View details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <span>Project Screenshot</span>
+            </div>
+            <div class="project-content">
+              <h3>Linux Server Automation</h3>
+              <p>Created Bash scripts to automate common server administration tasks and system monitoring.</p>
+              <div class="project-tags">
+                <span>Bash</span>
+                <span>CentOS</span>
+                <span>Cron</span>
+              </div>
+              <a href="projects.html" class="link-arrow">
+                View details <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="view-all">
+          <a href="projects.html" class="btn btn-outline">
+            View All Projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> Nicolas Varga. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="mailto:nicolas.varga@example.com">
+            <i class="fas fa-envelope"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
